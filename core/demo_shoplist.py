@@ -1,4 +1,5 @@
 import pickle,os
+from demo_login import login
 import demo_credit
 
 
@@ -17,8 +18,9 @@ def shopping():
 	product_list=pickle.load(f)
 	f.close()
 
-	def credit_payment(shoplist,price):
-			result=demo_credit.payment(shoplist,price)
+	@login
+	def credit_payment(username,shoplist,price):
+			result=demo_credit.payment(username,shoplist,price)
 			
 			if result == 'success':
 				print ('You shopping done!')
@@ -52,4 +54,3 @@ def shopping():
 		else:
 		    print("Your enter invalid!\n")
 
-shopping()

@@ -23,6 +23,7 @@ while True:
 	if enter_action.isdigit():
 		if enter_action == '1':
 			'''Query check'''
+			demo_credit.query()
 			continue
 		elif enter_action == '2':
 			'''Transfer'''
