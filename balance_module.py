@@ -1,6 +1,6 @@
 #-*- coding:utf-8 -*-
 #owner:houyizhong
-#version:1.1
+#version:1.0
 
 import pickle
 import os
